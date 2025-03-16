@@ -1,0 +1,100 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1.8cm,left=2.8cm,paper=letterpaper]{geometry}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{amsfonts}
+\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{sectsty}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{appendix} 
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref} 
+\usepackage{enumerate}
+\usepackage[font={small}]{caption}
+\usepackage{blindtext}
+\usepackage{capt-of}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{tcolorbox}
+
+\lstdefinestyle{C}
+{language=C,
+}
+\usepackage[backend=bibtex, sorting=none]{biblatex}
+\bibliography{referencias}
+
+
+%%%%%%%%%%%%%%%%%%%%%Pie de pagina%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\fancyhf{}
+\fancyhead[R]{\textit{ \nouppercase{\rightmark}} }
+\fancyfoot[L]{Pie izquierdo}
+\fancyfoot[R]{Pie derecho }
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand*{\sectionmark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+%%%%%%%%%%%%%%%%%%%%%%Definición color%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\definecolor{gray51}{rgb}{0.51,0.51,0.51}
+\definecolor{gray71}{rgb}{0.71,0.71,0.71}
+\newcommand{\HRule}{\rule{\linewidth}{.4mm}}
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%% Cambio nombres predeterminados%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\theenumi}{\alph{enumi}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Inclusión portada%%%%%%%%%%%%%%%%%%%%%%%%
+	\oddsidemargin 0cm \topmargin -2cm \textheight 21cm \textwidth
+	16.5cm \headheight 1cm \linespread {1.0} \headsep 1cm \parindent 0mm
+
+
+	\input{Portada}
+
+	\topmargin 0cm
+	\pagestyle{empty}
+	\pagestyle{fancy}
+	\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%Espacio después del párrafo y sangrías%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{12pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{desarrollo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography
+
+
+
+\end{document}
