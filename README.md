@@ -5,7 +5,7 @@ Compilado de plantillas de latex 🤓☝
 ### Contiene
 - Plantilla informe con ejemplos de figuras, subfiguras, cuadros, código, referencias.
 - Plantilla informe con portada con dos logos. TODO
-- Plantilla sin portada. TODO
+- Plantilla sin portada.
 - Plantilla doble columna. TODO
 
 
