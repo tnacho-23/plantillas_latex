@@ -1,0 +1,69 @@
+\section{Sección}
+\subsection{Subsección}
+\subsubsection{Subsubsección}
+
+Rick astley \ref{fig:Rick1} and Ricks Astleys \ref{fig:Rick2}.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=3cm]{images/rick.jpeg}
+    \caption{Rick.}
+    \label{fig:Rick1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering,margin=2cm}
+    \subfigure[Rick.]{\includegraphics[width=3cm]{images/rick.jpeg}}
+    \subfigure[Rick.]{\includegraphics[width=3cm]{images/rick.jpeg}}
+    \subfigure[Rick.]{\includegraphics[width=3cm]{images/rick.jpeg}}
+    \subfigure[Rick.]{\includegraphics[width=3cm]{images/rick.jpeg}}
+    \caption{Rick.}
+    \label{fig:Rick2}
+\end{figure}
+
+Rick cite \cite{manual} and Rick cite \cite{manual}. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sección 2}
+\begin{tcolorbox}
+[colback=white!5!white,colframe=green!75!black,fonttitle=\bfseries,title=Cuadro]
+Había una vez truz
+\end{tcolorbox}
+
+\begin{tcolorbox}
+[colback=white!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=Cuadro con código]
+\begin{minted}[tabsize=2,breaklines, fontsize=\scriptsize, linenos = False]{python}
+def suma(a, b):
+    """
+    Esta función toma dos números como entrada y devuelve la suma de ellos.
+    
+    Args:
+    a (float o int): El primer número.
+    b (float o int): El segundo número.
+    
+    Returns:
+    float o int: La suma de los dos números.
+    """
+    resultado = a + b
+    return resultado
+
+# Ejemplo de uso de la función
+num1 = 5
+num2 = 7
+resultado_suma = suma(num1, num2)
+print("El resultado de la suma es:", resultado_suma)
+
+\end{minted}
+\end{tcolorbox}
+
+
+
+
+
+\href{https://youtu.be/mCdA4bJAGGk}{Texto con Hipervínculo.}
+
+
+\clearpage
